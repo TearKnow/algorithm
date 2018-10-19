@@ -6,12 +6,16 @@ num = len(arr)
 
 for i in range(num - 1):#控制轮数
 	l = i + 1
+	needChange = 0
 	for j in range(num - l):#控制每轮的比较次数
-		#print(l, j)#l代表第几轮，j从0开始，用j与j+1进行比较
+		print(l, j)#l代表第几轮，j从0开始，用j与j+1进行比较
 		if(arr[j + 1] < arr[j]):
 			tmp = arr[j]
 			arr[j] = arr[j + 1]
 			arr[j + 1] = tmp
+			needChange = 1
+	if not needChange:
+		break
 
 print(arr)
 		
