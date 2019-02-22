@@ -4,7 +4,7 @@ pc_permute(array(1, 2, 3), [4]);
 //pc_permute(array(1, 2, 3, 4));
 
 function pc_permute($items, $perms = array()) {
- 	//var_dump($items);
+    //var_dump($items);
 	//var_dump($perms);
 	//echo '######################'."\n"; 
 	
